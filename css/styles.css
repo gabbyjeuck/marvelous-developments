@@ -160,7 +160,6 @@ img {
 .project1 {
   width: 280px;
   height:200px;
-  background-color: black;
   margin: 25px 15px 25px 15px;
   float: left;
 }
@@ -174,7 +173,6 @@ img {
 .project2 {
   width: 280px;
   height: 200px;
-  background-color: black;
   margin: 25px 15px 25px 15px;
   float: left;
 }
@@ -182,7 +180,6 @@ img {
 .project3 {
   width: 280px;
   height: 200px;
-  background-color: black;
   margin: 25px 15px 25px 15px;
   float: left;
 }
@@ -190,7 +187,6 @@ img {
 .project4 {
   width: 280px;
   height:200px;
-  background-color: black;
   margin: 25px 15px 25px 15px;
   float: left;
 }
@@ -198,7 +194,6 @@ img {
 .project5 {
   width: 280px;
   height:200px;
-  background-color: black;
   margin: 25px 15px 25px 15px;
   float: left;
 }
@@ -206,7 +201,6 @@ img {
 .project6 {
   width: 280px;
   height:200px;
-  background-color: black;
   margin: 25px 15px 25px 15px;
   float: left;
 }
@@ -218,18 +212,34 @@ img {
 
 /*<!---Contact Section--!>*/
 .contact {
-  margin-top: 300px;
+  margin-top: 250px;
 }
 
 .contact-content {
-  width: 25%;
-  margin: 50px auto 20px auto;
+  width: 50%;
+  margin: 50px auto ;
 }
 
 label {
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 10px;
   align-items:flex-end;
+  width:100px;
+  padding-top:10px;
+}
+input {
+  width:250px;
+  height:25px;
+  border-radius:5px;
+  padding:7px;
+  font-size:1.2em;
+  border: 1px solid grey;
+  margin-bottom:10px;
+}
+
+.submit {
+  margin-left: 100px;
+  width:150px;
 }
 .btn {
   margin-top: 40px;
@@ -279,3 +289,11 @@ label {
   position: relative;
   top: 1px;
 }
+
+	#wrapper {
+		width:600px;
+		margin:0 auto;
+		font-family: helvetica;
+		font-size:1.2em;
+
+	}
