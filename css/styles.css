@@ -220,73 +220,8 @@ img {
   margin: 50px auto ;
 }
 
-label {
-  display: inline-block;
-  margin-right: 10px;
-  align-items:flex-end;
-  width:100px;
-  padding-top:10px;
-}
-input {
-  width:250px;
-  height:25px;
-  border-radius:5px;
-  padding:7px;
-  font-size:1.2em;
-  border: 1px solid grey;
-  margin-bottom:10px;
-}
 
-.submit {
-  margin-left: 100px;
-  width:150px;
-}
-.btn {
-  margin-top: 40px;
-  -moz-box-shadow: inset 0px 1px 0px 0px #4ce1e6;
-  -webkit-box-shadow: inset 0px 1px 0px 0px #4ce1e6;
-  box-shadow: inset 0px 1px 0px 0px #4ce1e6;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #00acb5), color-stop(1, #027c80));
-  background: -moz-linear-gradient(center top, #00acb5 5%, #027c80 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00acb5', endColorstr='#027c80');
-  background-color: #00acb5;
-  -webkit-border-top-left-radius: 12px;
-  -moz-border-radius-topleft: 12px;
-  border-top-left-radius: 12px;
-  -webkit-border-top-right-radius: 12px;
-  -moz-border-radius-topright: 12px;
-  border-top-right-radius: 12px;
-  -webkit-border-bottom-right-radius: 12px;
-  -moz-border-radius-bottomright: 12px;
-  border-bottom-right-radius: 12px;
-  -webkit-border-bottom-left-radius: 12px;
-  -moz-border-radius-bottomleft: 12px;
-  border-bottom-left-radius: 12px;
-  text-indent: 0px;
-  display: inline-block;
-  color: #ffffff;
-  font-family: Arial;
-  font-size: 20px;
-  font-weight: bold;
-  font-style: normal;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
-  text-decoration: none;
-  text-align: center;
-  text-shadow: 1px 1px 10px #3d3a3d;
-}
 
-.btn:hover {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #027c80), color-stop(1, #00acb5));
-  background: -moz-linear-gradient(center top, #027c80 5%, #00acb5 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#027c80', endColorstr='#00acb5');
-  background-color: #027c80;
-}
 
-.btn:active {
-  position: relative;
-  top: 1px;
-}
+
 
