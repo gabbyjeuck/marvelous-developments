@@ -89,8 +89,11 @@ img {
   margin: 150px auto;
   position: relative;
   background-color: #f0f0f0;
-  width:100%;
+  width:50%;
   height:100%;
+}
+.middle-container.home {
+  width: 100%;
 }
 
 .selfie {
@@ -162,6 +165,7 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 60px 30px;
+  margin: 0 auto;
 }
 
 .project {
@@ -189,7 +193,7 @@ img {
 
 /*<!---Contact Section--!>*/
 .contact {
-  margin-top: 250px;
+  margin-top: 150px;
 }
 
 .contact-content {
