@@ -85,7 +85,7 @@ img {
   justify-content: center;
 
   width: 100%;
-  padding: 0 25px 0 0;
+  padding: 0 25px 25px 0;
 }
 
 .middle-container {
@@ -182,7 +182,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  gap: 60px 30px;
+  gap: 15px 30px;
   margin: 0 auto;
 }
 
@@ -211,11 +211,22 @@ img {
 .titles {
   display: block;
   font-size: 18px;
+  font-weight: 600;
+  color: #000;
 }
+.titles:hover {
+  color: #00adb5;
 
+  transform-origin: bottom right;
+}
+.positions {
+  color: #393e46;
+  font-size: 12px;
+  display: block;
+}
 /*<!---Contact Section--!>*/
 .contact {
-  margin-top: 150px;
+  margin-top: 75px;
 }
 
 .contact-content {
