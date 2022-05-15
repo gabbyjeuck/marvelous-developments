@@ -61,7 +61,7 @@ img {
 }
 
 .top-container {
-  height: 100px;
+  height: auto;
   background-color: #222831;
   line-height: 1;
   position: fixed;
@@ -80,7 +80,10 @@ img {
 
 .nav-bar {
   font-size: 1.5rem;
-  height: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
   width: 100%;
   padding: 0 25px 0 0;
 }
