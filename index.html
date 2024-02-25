@@ -11,133 +11,124 @@
 
   <body>
 
-    <div class="top-container">
-      <h1 class="logo">Marvelous Developments</h1>
-      <div class="nav-bar">
-        <a href="index.html">HOME</a>
-        <a href="projects.html">PROJECTS</a>
-        <a href="contact.html">CONTACT</a>
+    <header class="header">
+      <div class="container">
+        <h1 class="logo">Marvelous Developments</h1>
+        <nav class="nav-bar">
+          <a href="index.html">Home</a>
+          <!-- <a href="services.html">Services</a> -->
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+        </nav>
       </div>
-    </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <h1>Welcome to Marvelous Developments</h1>
+            <p>Your partner in digital transformation and software solutions.</p>
+            <a href="#about-us" class="hero-button">Learn More</a>
+          </div>
+        </div>
+      </section>
+      
+      <section class="services">
+        <div class="container">
+          <h3>Our Services</h3>
+            <div class="service-list">
+            <div class="service-item prog-lang">
+              <img src="images/home-icons/drupal.png" alt="Programming language HTML image"/>
+              <h4>Drupal Development</h4>
+            </div>
+      
+            <div class="service-item prog-lang">
+              <img src="images/home-icons/saas.png" alt="Software as a service image" />
+              <h4>Software as a Service</h4>
+            </div>
+      
+            <div class="service-item prog-lang">
+              <img src="images/home-icons/swagger.png" alt="Swagger API logo" />
+              <h4>API Architecture</h4>
+            </div>
+      
+            <div class="service-item prog-lang">
+              <img src="images/home-icons/API.png" alt="API development logo" />
+              <h4>API Development</h4>
+            </div>
+      
+            <div class="service-item prog-lang">
+              <img src="images/home-icons/aws.png" alt="Cloud Amazon Web Services image" />
+              <h4>Amazon Web Services</h4>
+            </div>
 
-    <div class="middle-container home">
-      <div class="soft-dev-heading">
-        <h2>Software and Web Development</h2>
-        <h3><em>with security in mind....</em></h3>
-        <img class="selfie" src="images/me.jpg" alt="Image of Gabrielle (self)"/>
-      </div>
+            <div class="service-item prog-lang">
+              <img src="images/home-icons/open-ai.png" alt="Open AI integration logo" />
+              <h4>OpenAI Integration</h4>
+            </div>
+      
+            <div class="service-item prog-lang">
+              <img src="images/home-icons/python.png" alt="Programming language Python image"/>
+              <h4>Python Programming</h4>
+            </div>
+      
+            <div class="service-item prog-lang">
+              <img src="images/home-icons/database.png" alt="Database image" />
+              <h4>Database Creation and Management</h4>
+            </div>
+      
+            <div class="service-item prog-lang">
+              <img src="images/home-icons/rdbms.png" alt="Relationship diagram image"/>
+              <h4>Relational Database Management Systems</h4>
+            </div>
+          </div>
+        </div>
+      </section>    
 
-      <div class="prog-lang">
-        <img src="images/home-icons/programmer.png" alt="Programming image" />
-        <h4>About Marvelous Developments</h4>
-        <p class="code-description">
-          Marvelous developments was founded by Gabrielle Jeuck in 2015 as a hobby.
-          However, the true coding passion developed during her studies with the University of Maryland
-          Global Campus (UMGC). While working on her bachelor's degree in software development and security,
-          she began her journey with front-end development to become a full-stack developer.
+      <section class="about-us-creative" id="about-us">
+        <div class="container">
+          <h2>About Marvelous Developments</h2>
+          <div class="about-section" onmouseover="animateSection(this)" onmouseout="resetSection(this)">
+            <h3>Why The Name Marvelous Developments</h3>
+            <p>The name "Marvelous Developments" is a heartfelt homage to my grandfather, Marvin Johnson.
+              His name, Marvin, sparked the idea to create something "Marvelous" as a tribute to his influence on my life. 
+              He was not only a guiding light in my personal growth but also a source of inspiration as I embarked on my 
+              journey into the world of coding and technology. By naming my freelance platform after him, I aim to honor 
+              his memory and carry forward his legacy of inspiration and innovation. It's a reminder that 
+              every line of code and every project I complete is a step towards fulfilling the potential he saw in me.</p>
+          </div>
+          <div class="about-section" onmouseover="animateSection(this)" onmouseout="resetSection(this)">
+            <h3>Professional Journey</h3>
+            <p>My adventure in the tech industry is anchored at Atlantic BT, where I contribute as a developer and application architect. Here, I collaborate with a talented team to craft digital solutions that not only meet but surpass our clients' expectations. Every project is an opportunity to explore new horizons and push the boundaries of what's possible.</p>
+          </div>
+          <div class="about-section" onmouseover="animateSection(this)" onmouseout="resetSection(this)">
+            <h3>Freelance Ventures</h3>
+            <p>Beyond the corporate realm, I embrace the freelance spirit with Marvelous Developments. This platform is my playground for innovation, where I offer bespoke solutions tailored to the unique needs of businesses and individuals. From custom software development to website design, I am here to fuel your digital transformation.</p>
+          </div>
+          <div class="about-section" onmouseover="animateSection(this)" onmouseout="resetSection(this)">
+            <h3>Collaboration and Innovation</h3>
+            <p>At the heart of my work is a passion for collaboration and innovation. I believe in the power of synergy and the magic that happens when creative minds come together. Whether you're looking for a tech partner for your next project or seeking expert guidance, let's join forces and make something amazing happen.</p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <a class="footerLinks" href="https://linkedin.com/in/gjeuck"><img class="footerImg" src="images/linkedin.png" alt="Linkedin logo"></a>
+        <a class="footerLinks" href="https://github.com/gabbyjeuck"><img class="footerImg" src="images/github.png" alt="Github logo"></a>
+        <p class="copyright">
+          © 2015-2024 Marvelous Developments
         </p>
-
-      </div>
-
-      <div class="prog-lang">
-        <img class="right-align-img" src="images/home-icons/html.png" alt="Programming language HTML image"/>
-        <h4>Web Design and Development - HTML, CSS, and JavaScript</h4>
-        <p class="code-description">
-          Offering quality web design, development and functionality. Your website
-          will be fully functioning to your needs. This isn't the 90's and web design
-          has to truly focus on the user-interface design as well as the user-experience.
-        </p>
-      </div>
-
-      <div class="prog-lang">
-        <img src="images/home-icons/bootstrap.png" alt="Styling library Bootstrap image" />
-        <h4>Bootstrap Framework</h4>
-        <p class="code-description">
-          Bootstrap framework offers the ability to have a responsive mobile-first
-          front-end web development. Hand and hand with CSS and Javascript, it offers
-          beautiful smooth design for your mobile users.
-        </p>
-      </div>
-
-      <div class="prog-lang">
-        <img class="right-align-img" src="images/home-icons/jquery.png" alt="Programming language jQuery image" />
-        <h4>JQuery</h4>
-        <p class="code-description">
-          JQuery goes hand and hand with Javascript during web design. It's a library
-          that allows the ability to utilize plugins to add even greater functionality to your
-          website.
-        </p>
-      </div>
-
-      <div class="prog-lang">
-        <img src="images/home-icons/java.png" alt="Programming language Java image" />
-        <h4>Java Programming</h4>
-        <p class="code-description">
-          I can develop applications using Java. Depending on your needs and platforms
-          you're wanting your applications to run on. Java allows you to use applications on
-          multiple devices including computers, laptops, gaming consoles, blu-ray players,
-          car navigation systems, medical monintoring devices, parking meters, smartphones, etc.
-        </p>
-      </div>
-
-      <div class="prog-lang">
-        <img class="right-align-img" src="images/home-icons/aws.png" alt="Cloud Amazon Web Services image" />
-        <h4>Amazon Web Services</h4>
-        <p class="code-description">
-          Utilizng cloud services can be the most cost efficient for your application/database.
-          I have knowledge with AWS Cloud9, Lambda, Command-Line Interface, API Gateway, DynamoDB, and S3.
-          Having the ability to intertwine all functionality can be the better option depending on your
-          website services.
-        </p>
-      </div>
-
-      <div class="prog-lang">
-        <img src="images/home-icons/json.png" alt="Data format JSON image" />
-        <h4>JavaScript Object Notation</h4>
-        <p class="code-description">
-          JSON is which is used to transmit data between the server and web application.
-          It is highly used when managing databases via cloud services.
-        </p>
-      </div>
-
-      <div class="prog-lang">
-        <img class="right-align-img" src="images/home-icons/python.png" alt="Programming language Python image"/>
-        <h4>Python Programming</h4>
-        <p class="code-description">
-          Python programming language is used to develop desktop GUI applications, websites and web applications.
-          I have the ability to create your website utilizing Flask plugins which can allow for greater functionality to
-          your website applications. Having the ability to fully functionalize your site via cloud services is becoming the new
-          goto. Ranging from basic web apps to machine learning chatbots Python may be the language you need or prefer for your web applications.
-        </p>
-      </div>
-
-      <div class="prog-lang">
-        <img src="images/home-icons/database.png" alt="Database image" />
-        <h4>Database Creation and Management</h4>
-        <p class="code-description">
-          Depending on your type of database, I have experience handling SQL, NoSQL, MySQL, and PostgreSQL.
-        </p>
-      </div>
-
-      <div class="prog-lang">
-        <img class="right-align-img" src="images/home-icons/rdbms.png" alt="Relationship diagram image"/>
-        <h4>Relational Database Management Systems</h4>
-        <p class="code-description">
-          I have the ability to create a relational database management system. This allows for
-          complex queries. If your database requires a lot of tables which share some form of relation, then
-          a relational database is what you'll need.
-        </p>
-      </div>
-    </div>
-
-    <div class="bottom-container">
-      <a class="footerLinks" href="https://linkedin.com/in/gjeuck"><img class="footerImg" src="images/linkedin.png" alt="Linkedin logo"></a>
-      <a class="footerLinks" href="https://github.com/gabbyjeuck"><img class="footerImg" src="images/github.png" alt="Github logo"></a>
-      <p class="copyright">
-        © 2015-2022 Marvelous Developments
-      </p>
-    </div>
-
+      </footer>
+    </main>
   </body>
-
 </html>
+
+<script>
+  function animateSection(element) {
+    element.classList.add('animated');
+  }
+
+  function resetSection(element) {
+    element.classList.remove('animated');
+  }
+</script>

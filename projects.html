@@ -10,89 +10,146 @@
   </head>
 
   <body>
-    <div class="top-container">
-      <h1 class="logo">Marvelous Developments</h1>
-      <div class="nav-bar">
-        <a href="index.html">HOME</a>
-        <a href="projects.html">PROJECTS</a>
-        <a href="contact.html">CONTACT</a>
+    <header class="header">
+      <div class="container">
+        <h1 class="logo">Marvelous Developments</h1>
+        <nav class="nav-bar">
+          <a href="index.html">Home</a>
+          <!-- <a href="services.html">Services</a> -->
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+        </nav>
       </div>
-    </div>
+    </header>
+    <main>
+      <section class="projects">
+        <div class="container">
+          <div class="project-grid">
+            <div class="project-card" onmouseover="hoverProject(this)" onmouseout="unhoverProject(this)">
+              <div class="project-image" style="background-image: url('images/projects/RH_Opensource.JPG');"></div>
+              <div class="project-overlay">
+                <div class="project-info">
+                  <a href="https://opensource.com/" target="_blank" class="project-link">
+                    <h3 class="project-title">OpenSource</h3>
+                    <p class="project-position">Maintainer | Drupal Migration from 7 to 9. (Backend and Frontend Support)</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+        
+            <div class="project-card" onmouseover="hoverProject(this)" onmouseout="unhoverProject(this)">
+              <div class="project-image" style="background-image: url('images/projects/RH_EnterprisersProject.JPG');"></div>
+              <div class="project-overlay">
+                <div class="project-info">
+                  <a href="https://enterprisersproject.com/" target="_blank" class="project-link">
+                    <h3 class="project-title">Enterprisers Project</h3>
+                    <p class="project-position">Maintainer | Drupal Migration from 7 to 9. (Drupal Backend and Frontend Support)</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+        
+            <div class="project-card" onmouseover="hoverProject(this)" onmouseout="unhoverProject(this)">
+              <div class="project-image" style="background-image: url('images/projects/ABT_CivicFCU.JPG');"></div>
+              <div class="project-overlay">
+                <div class="project-info">
+                  <a href="https://civicfcu.org/" target="_blank" class="project-link">
+                    <h3 class="project-title">Civic Federal Credit Union</h3>
+                    <p class="project-position">Maintainer | Drupal 9 (Drupal Backend and Frontend Support)</p>
+                  </a>
+                </div>
+              </div>
+            </div>
 
-    <div class="middle-container">
-      <div class="project-wrapper">
+            <div class="project-card" onmouseover="hoverProject(this)" onmouseout="unhoverProject(this)">
+                <div class="project-image" style="background-image: url('images/projects/ABT_StanJohnsonCo.JPG');"></div>
+                <div class="project-overlay">
+                  <div class="project-info">
+                    <a href="https://www.stanjohnsonco.com/" target="_blank" class="project-link">
+                      <h3 class="project-title">Stan Johnson Co.</h3>
+                      <p class="project-position">Maintainer | Migration from 7 to 9. (Drupal Backend and Frontend Support)</p>
+                    </a>
+                  </div>
+                </div>
+            </div>
 
-        <div class="project">
-          <a href="https://opensource.com/" target="_blank">
-            <p class="titles">OpenSource <span class="positions">Maintainer | Drupal Migration from 7 to 9.  <br> (Backend and Frontend Support)</span></p>
-            <img class="project-img" src="images/projects/RH_Opensource.JPG" alt="Opensource screenshot image" />
-          </a>
+            <div class="project-card" onmouseover="hoverProject(this)" onmouseout="unhoverProject(this)">
+                <div class="project-image" style="background-image: url('images/projects/Contract_ASBHawaii.JPG');"></div>
+                  <div class="project-overlay">
+                    <div class="project-info">
+                      <a href="https://www.asbhawaii.com/" target="_blank" class="project-link">
+                        <h3 class="project-title">American Savings Bank Hawaii</h3>
+                        <p class="project-position">Contract Ended | Drupal Migration from 7 to 8.</p>
+                      </a>
+                  </div>
+                </div>
+            </div>
+
+            <div class="project-card" onmouseover="hoverProject(this)" onmouseout="unhoverProject(this)">
+                <div class="project-image" style="background-image: url('images/projects/TorisAdventures.JPG');"></div>
+                <div class="project-overlay">
+                  <div class="project-info">
+                    <a href="https://gabbyjeuck.github.io/Toris_Adventures/" target="_blank" class="project-link">
+                      <h3 class="project-title">Tori's Adventures</h3>
+                      <p class="project-position">Educational Content | Bootstrap Creator</p>
+                    </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card" onmouseover="hoverProject(this)" onmouseout="unhoverProject(this)">
+              <div class="project-image" style="background-image: url('images/projects/MD_Edition4.JPG');"></div>
+              <div class="project-overlay">
+                <div class="project-info">
+                  <a href="https://gabbyjeuck.github.io/Toris_Adventures/" target="_blank" class="project-link">
+                    <h3 class="project-title">Marvelous Developments</h3>
+                    <p class="project-position">(You're Currently Here: Portfolio)</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-card" onmouseover="hoverProject(this)" onmouseout="unhoverProject(this)">
+              <div class="project-image" style="background-image: url('images/projects/Simon_Says.JPG');"></div>
+              <div class="project-overlay">
+                <div class="project-info">
+                  <a href="https://gabbyjeuck.github.io/Simon_Says_Game/" target="_blank" class="project-link">
+                    <h3 class="project-title">Simon Says Game</h3>
+                    <p class="project-position">(Educational Driven)</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-card" onmouseover="hoverProject(this)" onmouseout="unhoverProject(this)">
+              <div class="project-image" style="background-image: url('images/projects/MD_Edition1.JPG');"></div>
+              <div class="project-overlay">
+                <div class="project-info">
+                  <a href="https://gabbyjeuck.github.io/Simon_Says_Game/" target="_blank" class="project-link">
+                    <h3 class="project-title">Marvelous Developments</h3>
+                    <p class="project-position">(When it all began...)</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <div class="project">
-          <a href="https://enterprisersproject.com/" target="_blank">
-            <p class="titles">Enterprisers Project <span class="positions">Maintainer | Drupal Migration from 7 to 9.  <br>  (Drupal Backend and Frontend Support)</span></p>
-            <img class="project-img" src="images/projects/RH_EnterprisersProject.JPG" alt="Enterprisers Project screenshot image"  />
-          </a>
-        </div>
-
-        <div class="project">
-          <a href="https://civicfcu.org/" target="_blank">
-            <p class="titles">Civic Federal Credit Union <span class="positions">Maintainer | Drupal 9 <br> (Drupal Backend and Frontend Support)</span></p>
-            <img class="project-img" src="images/projects/ABT_CivicFCU.JPG" alt="Civic screenshot image"/>
-          </a>
-        </div>
-
-        <div class="project">
-          <a href="https://www.stanjohnsonco.com/" target="_blank">
-            <p class="titles">Stan Johnson Co. <span class="positions">Maintainer | Migration from 7 to 9.  <br> (Drupal Backend and Frontend Support)</span></p>
-            <img class="project-img" src="images/projects/ABT_StanJohnsonCo.JPG" alt="Stan Johnson Company screenshot image"/>
-          </a>
-        </div>
-
-        <div class="project">
-          <a href="https://www.asbhawaii.com/" target="_blank">
-            <p class="titles">American Savings Bank Hawaii <span class="positions">Contract Ended | Drupal Migration from 7 to 8.  <br> (Drupal Backend and Frontend Support)</span></p>
-            <img class="project-img" src="images/projects/Contract_ASBHawaii.JPG" alt="ASB Hawaii screenshot image" />
-          </a>
-        </div>
-
-        <div class="project">
-          <a href="https://gabbyjeuck.github.io/Toris_Adventures/" target="_blank">
-            <p class="titles">Tori's Adventures<span class="positions">Creator.  <br>(Bootstrap)</span></p>
-            <img class="project-img" src="images/projects/TorisAdventures.JPG" alt="Tori's Adventure screenshot image" />
-          </a>
-        </div>
-
-        <div class="project">
-          <a href="#">
-            <p class="titles">Marvelous Developments<span class="positions">(You're Currently Here: Portfolio)</span></p>
-            <img class="project-img" src="images/projects/MD_Edition4.JPG" alt="Marvelous Development screenshot image"/>
-          </a>
-        </div>
-        <div class="project">
-          <a href="https://gabbyjeuck.github.io/Simon_Says_Game/" target="_blank">
-            <p class="titles">Simon Says Game<span class="positions">(Educational Driven)</span></p>
-            <img class="project-img" src="images/projects/Simon_Says.JPG" alt="Simon Says game screenshot image" />
-          </a>
-        </div>
-
-        <div class="project">
-          <a href="#">
-            <p class="titles">Marvelous Developments<span class="positions">(When it all began...)</span></p>
-            <img class="project-img" src="images/projects/MD_Edition1.JPG" alt="Marvelous Development screenshot image" />
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="bottom-container">
-      <a class="footerLinks" href="https://linkedin.com/in/gjeuck"><img class="footerImg" src="images/linkedin.png" alt="Linkedin logo"></a>
-      <a class="footerLinks" href="https://github.com/gabbyjeuck"><img class="footerImg" src="images/github.png" alt="Github logo"></a>
-      <p class="copyright">
-        © 2015-2022 Marvelous Developments
-      </p>
-    </div>
-  </body>
+      </section>
+      <footer class="footer">
+        <a class="footerLinks" href="https://linkedin.com/in/gjeuck"><img class="footerImg" src="images/linkedin.png" alt="Linkedin logo"></a>
+        <a class="footerLinks" href="https://github.com/gabbyjeuck"><img class="footerImg" src="images/github.png" alt="Github logo"></a>
+        <p class="copyright">
+          © 2015-2024 Marvelous Developments
+        </p>
+      </footer>
+    </main>
+    </body>
 
 </html>
+<script>
+  function hoverProject(element) {
+    element.classList.add('hovered');
+  }
+
+  function unhoverProject(element) {
+    element.classList.remove('hovered');
+  }
+</script>
