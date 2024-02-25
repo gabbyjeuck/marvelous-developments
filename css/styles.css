@@ -17,58 +17,168 @@ body {
   background-color: #0A192F;
   color: #E6F1FF;
   padding: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle drop shadow */
 }
-
-.logo {
-  font-size: 24px;
-  font-weight: 700;
-}
-
 .nav-bar {
   text-align: right;
 }
-
 .nav-bar a {
   color: #E6F1FF;
   text-decoration: none;
   margin-left: 20px;
+  padding: 5px 10px; /* Adds some padding for a better touch area */
 }
 
 .nav-bar a:hover {
   color: #64FFDA;
+  background-color: rgba(255, 255, 255, 0.1); /* Adds a subtle highlight on hover */
+  border-radius: 5px; /* Rounds the corners for a softer look */
 }
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+}
+/* Hero Section */
 
 .hero {
-  background-color: #F0F8FF;
-  padding: 40px 0;
+  background: linear-gradient(135deg, #0A192F 0%, #112D4E 100%);
+  color: #E6F1FF;
+  padding: 100px 0;
   text-align: center;
 }
 
+.hero .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  animation: fadeInUp 1s ease-out;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.hero-button {
+  background-color: #64FFDA;
+  color: #0A192F;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.hero-button:hover {
+  background-color: #52DABE; /* Slightly darker shade for hover effect */
+  color: #E6F1FF;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Services Section */
 .services {
   padding: 40px 0;
 }
 
 .service-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  gap: 20px;
 }
 
 .service-item {
-  flex-basis: 30%;
   margin-bottom: 20px;
 }
 
 .service-item h4 {
   font-size: 20px;
   font-weight: 500;
-  color: #0A192F; /* Changed from #64FFDA to #0A192F for better contrast */
+  color: #0A192F;
 }
 
 .service-item p {
-  color: #8892B0; /* Added for consistent text color */
+  color: #8892B0;
 }
 
+/* Animations */
+.services .service-list .service-item {
+  opacity: 0;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.services .service-list .service-item:nth-child(odd) {
+  animation-name: slideInLeft;
+}
+
+.services .service-list .service-item:nth-child(even) {
+  animation-name: slideInRight;
+}
+
+/* Animation Delays */
+.services .service-list .service-item:nth-child(1) { animation-delay: 0.2s; }
+.services .service-list .service-item:nth-child(2) { animation-delay: 0.4s; }
+.services .service-list .service-item:nth-child(3) { animation-delay: 0.6s; }
+.services .service-list .service-item:nth-child(4) { animation-delay: 0.8s; }
+.services .service-list .service-item:nth-child(5) { animation-delay: 1.0s; }
+.services .service-list .service-item:nth-child(6) { animation-delay: 1.2s; }
+.services .service-list .service-item:nth-child(7) { animation-delay: 1.4s; }
+.services .service-list .service-item:nth-child(8) { animation-delay: 1.6s; }
+.services .service-list .service-item:nth-child(9) { animation-delay: 1.8s; }
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .service-list {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
+}
+
+@media (min-width: 720px) and (max-width: 920px) {
+  .service-list {
+    grid-template-columns: repeat(2, 1fr); /* Set to 2 columns for tablet screens */
+    gap: 20px;
+  }
+}
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 .footer {
   background-color: #0A192F;
   color: #E6F1FF;
@@ -124,4 +234,162 @@ body {
   font-size: 20px;
   font-weight: 500;
   color: #0A192F; /* Navy Blue for better contrast */
+}
+
+/* Add more delays as needed for additional items */
+
+/*about us*/
+.about-us {
+  background-color: #E6F1FF;
+  padding: 40px 0;
+}
+
+.about-us .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.about-us h2 {
+  color: #0A192F;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.about-us p {
+  color: #0A192F;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.about-us-creative {
+  background-color: #F0F8FF;
+  color: #0A192F;
+  padding: 60px 0;
+}
+
+.about-us-creative .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.about-us-creative h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.about-us-creative .about-section {
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #E6F1FF;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about-us-creative h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.about-us-creative p {
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Animation styles */
+.animated {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Us */
+.middle-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #F0F8FF;
+  border-radius: 5px;
+}
+
+.contact {
+  color: #0A192F;
+  text-align: center;
+}
+
+.contact-content {
+  color: #8892B0;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.contact-form iframe {
+  border: none;
+  border-radius: 5px;
+}
+
+/*Projects Styles*/
+.projects {
+  padding: 40px 0;
+  background-color: #E6F1FF;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-image {
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+}
+
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(10, 25, 47, 0.8);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.project-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.project-link {
+  color: #64FFDA;
+  text-decoration: none;
+}
+
+.project-title {
+  font-size: 20px;
+  margin: 0;
+}
+
+.project-position {
+  font-size: 14px;
+  color: #E6F1FF;
+}
+
+/* JavaScript hover effect */
+.hovered .project-overlay {
+  opacity: 1;
 }

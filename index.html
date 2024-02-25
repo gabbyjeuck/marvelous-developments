@@ -25,10 +25,14 @@
     <main>
       <section class="hero">
         <div class="container">
-          <h2>Welcome to Marvelous Developments</h2>
-          <p>Your partner in digital transformation and software solutions.</p>
+          <div class="hero-content">
+            <h1>Welcome to Marvelous Developments</h1>
+            <p>Your partner in digital transformation and software solutions.</p>
+            <a href="#about-us" class="hero-button">Learn More</a>
+          </div>
         </div>
       </section>
+      
       <section class="services">
         <div class="container">
           <h3>Our Services</h3>
@@ -79,15 +83,52 @@
             </div>
           </div>
         </div>
+      </section>    
+
+      <section class="about-us-creative" id="about-us">
+        <div class="container">
+          <h2>About Marvelous Developments</h2>
+          <div class="about-section" onmouseover="animateSection(this)" onmouseout="resetSection(this)">
+            <h3>Why The Name Marvelous Developments</h3>
+            <p>The name "Marvelous Developments" is a heartfelt homage to my grandfather, Marvin Johnson.
+              His name, Marvin, sparked the idea to create something "Marvelous" as a tribute to his influence on my life. 
+              He was not only a guiding light in my personal growth but also a source of inspiration as I embarked on my 
+              journey into the world of coding and technology. By naming my freelance platform after him, I aim to honor 
+              his memory and carry forward his legacy of inspiration and innovation. It's a reminder that 
+              every line of code and every project I complete is a step towards fulfilling the potential he saw in me.</p>
+          </div>
+          <div class="about-section" onmouseover="animateSection(this)" onmouseout="resetSection(this)">
+            <h3>Professional Journey</h3>
+            <p>My adventure in the tech industry is anchored at Atlantic BT, where I contribute as a developer and application architect. Here, I collaborate with a talented team to craft digital solutions that not only meet but surpass our clients' expectations. Every project is an opportunity to explore new horizons and push the boundaries of what's possible.</p>
+          </div>
+          <div class="about-section" onmouseover="animateSection(this)" onmouseout="resetSection(this)">
+            <h3>Freelance Ventures</h3>
+            <p>Beyond the corporate realm, I embrace the freelance spirit with Marvelous Developments. This platform is my playground for innovation, where I offer bespoke solutions tailored to the unique needs of businesses and individuals. From custom software development to website design, I am here to fuel your digital transformation.</p>
+          </div>
+          <div class="about-section" onmouseover="animateSection(this)" onmouseout="resetSection(this)">
+            <h3>Collaboration and Innovation</h3>
+            <p>At the heart of my work is a passion for collaboration and innovation. I believe in the power of synergy and the magic that happens when creative minds come together. Whether you're looking for a tech partner for your next project or seeking expert guidance, let's join forces and make something amazing happen.</p>
+          </div>
+        </div>
       </section>
+
       <footer class="footer">
         <a class="footerLinks" href="https://linkedin.com/in/gjeuck"><img class="footerImg" src="images/linkedin.png" alt="Linkedin logo"></a>
         <a class="footerLinks" href="https://github.com/gabbyjeuck"><img class="footerImg" src="images/github.png" alt="Github logo"></a>
         <p class="copyright">
-          © 2015-2022 Marvelous Developments
+          © 2015-2024 Marvelous Developments
         </p>
       </footer>
-  </main>
+    </main>
   </body>
-
 </html>
+
+<script>
+  function animateSection(element) {
+    element.classList.add('animated');
+  }
+
+  function resetSection(element) {
+    element.classList.remove('animated');
+  }
+</script>
