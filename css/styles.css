@@ -1,154 +1,83 @@
-/*--Background:  #222831-->
-<!--light Grey: #393e46 -->
-<!-- blue-teal: #00adb5 -->
-<!--white grey: #eeeeee -->*/
-html {
-  position: relative;
-  min-height: 100%;
-}
-
 body {
-  background-color: #f0f0f0;
-  text-align: center;
-  margin: 0;
-  font-family: 'Abhaya Libre', sans-serif;
-  color: #222831;
-  height: 100%;
-  width: 100%;
-}
-
-h1 {
-  margin: 0;
-}
-
-h2 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 2rem;
   margin: 0;
-  color: #393e46;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #E6F1FF;
+  color: #0A192F;
 }
 
-h4 {
-  font-family: 'Abhaya Libre', sans-serif;
-  font-size: 1.25rem;
-  color: #393e46;
-  margin: 0;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-a {
-  font-family: 'Abhaya Libre', serif;
-  text-decoration: none;
-  color: #eeeeee;
-  padding-right: 5%;
-  padding-left: 5%;
-}
-
-a:hover {
-  color: #393e46;
-}
-
-p {
-  font-family: 'Montserrat', sans-serif;
-  color: #393e46;
-}
-
-img {
-  height: 25%;
-  width: 25%;
-  float: left;
-  margin-right: 20px;
-  margin-left: 0;
-}
-
-.top-container {
-  height: auto;
-  background-color: #222831;
-  line-height: 1;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 99999;
+.header {
+  background-color: #0A192F;
+  color: #E6F1FF;
+  padding: 20px 0;
 }
 
 .logo {
-  font-family: 'Arima Madurai', cursive, sans-serif;
-  font-size: 2.5rem;
-  color: #00adb5;
-  padding: 10px 0 25px 0;
-  height: 40%;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 .nav-bar {
-  font-size: 1.5rem;
+  text-align: right;
+}
+
+.nav-bar a {
+  color: #E6F1FF;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.nav-bar a:hover {
+  color: #64FFDA;
+}
+
+.hero {
+  background-color: #F0F8FF;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.services {
+  padding: 40px 0;
+}
+
+.service-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-
-  width: 100%;
-  padding: 0 25px 25px 0;
+  justify-content: space-between;
 }
 
-.middle-container {
-  margin: 150px auto;
-  position: relative;
-  background-color: #f0f0f0;
-  width:75%;
-  height:100%;
-}
-@media screen and (min-width: 680px) {
-  .middle-container {
-    width: 90%;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .middle-container {
-    width: 75%;
-  }
-}
-@media screen and (min-width: 1600px) {
-  .middle-container {
-    width: 65%;
-  }
-}
-.middle-container.home {
-  width: 100%;
+.service-item {
+  flex-basis: 30%;
+  margin-bottom: 20px;
 }
 
-.selfie {
-  float: none;
-  border: 2px solid black;
-  border-radius: 50%;
-  height: 200px;
-  width: 200px;
-  margin: 5px;
+.service-item h4 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #0A192F; /* Changed from #64FFDA to #0A192F for better contrast */
 }
 
-.right-align-img {
-  float: right;
-  margin-left: 20px;
-  margin-right: 0;
+.service-item p {
+  color: #8892B0; /* Added for consistent text color */
 }
 
-.soft-dev-heading {
-  color: #393e46;
-  font-size: 1.5rem;
-  height: 100%;
-  width: 100%;
-  margin-top: 200px;
-  font-family: 'Arima Madurai', cursive, sans-serif;
-}
-
-.prog-lang {
-  display: inline-block;
-  width: 50%;
-  margin: 30px auto 30px auto;
-  text-align: left;
-  line-height: 2;
+.footer {
+  background-color: #0A192F;
+  color: #E6F1FF;
+  text-align: center;
+  padding: 20px 0;
 }
 
 .bottom-container {
   bottom: 0;
-  position:absolute;
   background-color: #222831;
   height: 100px;
   width: 100%;
@@ -172,70 +101,27 @@ img {
 .copyright {
   margin: 0;
   padding: 0 0 0 0;
-  color: #00adb5;
+  color: #E6F1FF;
   font-size: .75rem;
-  background-color: #222831;
 }
 
-/* PROJECT SECTION */
-.project-wrapper {
+.prog-lang {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  gap: 15px 30px;
-  margin: 0 auto;
-}
-
-.project {
-  max-width: 400px;
-}
-@media screen and (min-width: 680px) {
-  .project {
-    max-width: 290px;
-  }
-}
-
-.project-img {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  transition: 0.3s;
-  box-shadow: 0 8px 16px 0 #222831;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: #F0F8FF; /* Light background for each service */
+  padding: 10px;
   border-radius: 5px;
 }
 
-.project-img:hover {
-  box-shadow: 0 8px 16px 10px grey;
+.prog-lang img {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
 }
 
-.titles {
-  display: block;
-  font-size: 18px;
-  font-weight: 600;
-  color: #000;
+.prog-lang h4 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #0A192F; /* Navy Blue for better contrast */
 }
-.titles:hover {
-  color: #00adb5;
-
-  transform-origin: bottom right;
-}
-.positions {
-  color: #393e46;
-  font-size: 12px;
-  display: block;
-}
-/*<!---Contact Section--!>*/
-.contact {
-  margin-top: 75px;
-}
-
-.contact-content {
-  width: 50%;
-  margin: 50px auto ;
-}
-
-
-
-
-
-
