@@ -6,7 +6,9 @@ body {
   background-color: #E6F1FF;
   color: #0A192F;
 }
-
+a {
+  color: #0A192F;
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -185,7 +187,9 @@ body {
   text-align: center;
   padding: 20px 0;
 }
-
+footer a {
+    color: white;
+}
 .bottom-container {
   bottom: 0;
   background-color: #222831;
